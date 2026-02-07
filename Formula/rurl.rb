@@ -15,6 +15,6 @@ class Rurl < Formula
   end
 
   test do
-    system "#{bin}/rurl", "--version"
+    system "#{bin}/rurl", "-V"
   end
 end
