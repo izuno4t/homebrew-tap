@@ -7,6 +7,7 @@
 
 | Formula | 説明 | 対応環境 |
 | --- | --- | --- |
+| `atom` | Anything to Markdown | macOS |
 | `crv` | Coverage report viewer for terminals | macOS, Linux (x86_64) |
 | `rurl` | Rust-based URL helper | macOS (Apple Silicon) |
 
@@ -29,6 +30,12 @@ brew tap izuno4t/tap
 
 ## インストール方法
 
+### `atom`
+
+```bash
+brew install izuno4t/tap/atom
+```
+
 ### `crv`
 
 ```bash
@@ -44,6 +51,7 @@ brew install izuno4t/tap/rurl
 ## 動作確認
 
 ```bash
+atom --version
 crv --version
 rurl -V
 ```
@@ -60,6 +68,7 @@ brew upgrade
 個別に更新する場合:
 
 ```bash
+brew upgrade izuno4t/tap/atom
 brew upgrade izuno4t/tap/crv
 brew upgrade izuno4t/tap/rurl
 ```
@@ -67,6 +76,7 @@ brew upgrade izuno4t/tap/rurl
 ## アンインストール
 
 ```bash
+brew uninstall atom
 brew uninstall crv
 brew uninstall rurl
 ```
