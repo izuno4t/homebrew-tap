@@ -5,12 +5,12 @@ class Atom < Formula
   desc "Anything to Markdown"
   homepage "https://github.com/izuno4t/atom"
   license "MIT"
-  version "1.0.1"
+  version "1.1.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/izuno4t/atom/releases/download/v1.0.1/atom-1.0.1-aarch64-apple-darwin.tar.gz"
-      sha256 "b337db40d0bd4323939e549a67da017f99db96edba8e6e28655fa0440198fe5b"
+      url "https://github.com/izuno4t/atom/releases/download/v1.1.0/atom-1.1.0-aarch64-apple-darwin.tar.gz"
+      sha256 "f1991d7806ad896509215085f65ec0172a2e4a6f11a9a73962dbd822c1b19069"
     end
     on_intel do
       odie "atom is not available for Intel macOS"
@@ -19,8 +19,8 @@ class Atom < Formula
 
   on_linux do
     on_intel do
-      url "https://github.com/izuno4t/atom/releases/download/v1.0.1/atom-1.0.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "79081a6886415d2d815cd4b9b344e39966ef2791c41b6fc619d071a2fb24c071"
+      url "https://github.com/izuno4t/atom/releases/download/v1.1.0/atom-1.1.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "f5104c54ebe056cc85bafe2971fc57391047e73d2daa6733a8b366a821373e17"
     end
   end
 
@@ -30,7 +30,7 @@ class Atom < Formula
   end
 
   test do
-    assert_match "atom 1.0.1", shell_output("#{bin}/atom --version")
+    assert_match "atom 1.1.0", shell_output("#{bin}/atom --version")
     assert_path_exists pkgshare/"config.toml.example"
   end
 end
